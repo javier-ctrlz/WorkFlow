@@ -1,0 +1,189 @@
+<nav class="navbar">
+  <div class="container navbar-content">
+    <div class="logo-container">
+      <img src="logo.png" alt="WorkFlow Logo" class="logo-img" (click)="navigate('WorkflowManager')"/>
+      <span class="logo-text">WorkFlowManager</span>
+    </div>
+    <div class="nav-actions">
+      <a routerLink="/login" class="btn btn-ghost" (click)="navigate('Login')">Iniciar Sesión</a>
+      <a routerLink="/register-org" class="btn btn-primary btn-desktop" (click)="navigate('Register')">Registrar Organización</a>
+      <a routerLink="/register-org" class="btn btn-primary btn-mobile" (click)="navigate('Register')">Registrar</a>
+    </div>
+  </div>
+</nav>
+
+<section class="section">
+  <div class="container">
+    <div class="grid-cols-2 items-center">
+      <div class="hero-content">
+        <span class="badge badge-blue">Gestión de Proyectos Inteligente</span>
+        <h1 class="hero-title">
+          Organiza tu equipo,
+          <span class="text-highlight-green">impulsa resultados</span>
+        </h1>
+        <p class="hero-subtitle">
+          WorkFlowManager es la plataforma completa para gestionar proyectos, asignar tareas y dar
+          seguimiento al progreso de tu equipo en tiempo real.
+        </p>
+        <div class="hero-actions">
+          <a routerLink="/register-org" class="btn btn-cta-primary">
+            <i class="bi bi-file-earmark-text"></i>
+            <span class="btn-text-desktop" (click)="navigate('Register')">Registrar mi Organización</span>
+            <span class="btn-text-mobile" (click)="navigate('Register')">Registrar Organización</span>
+            <i class="bi bi-arrow-right"></i>
+          </a>
+          <a routerLink="/login" class="btn btn-cta-secondary" (click)="navigate('Login')">Ya tengo cuenta</a>
+        </div>
+        <div class="hero-perks">
+          <span><i class="bi bi-check-circle-fill"></i> Sin tarjeta de crédito</span>
+          <span><i class="bi bi-check-circle-fill"></i> Setup en 2 minutos</span>
+        </div>
+      </div>
+      <div class="hero-image-wrapper">
+        <div class="hero-image-glow"></div>
+        <img src="media/teamworkoffice.jpg" alt="Equipo colaborando" class="hero-image" />
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section bg-white">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Todo lo que necesitas en un solo lugar</h2>
+      <p class="section-subtitle">Herramientas poderosas diseñadas para equipos modernos</p>
+    </div>
+    <div class="features-grid">
+      <div class="card card-blue">
+        <div class="card-icon-wrapper bg-blue">
+          <i class="bi bi-kanban"></i>
+        </div>
+        <h3 class="card-title">Tableros Kanban</h3>
+        <p class="card-text">
+          Visualiza el flujo de trabajo con tableros interactivos de arrastrar y soltar.
+        </p>
+      </div>
+      <div class="card card-green">
+        <div class="card-icon-wrapper bg-green">
+          <i class="bi bi-people-fill"></i>
+        </div>
+        <h3 class="card-title">Gestión de Equipos</h3>
+        <p class="card-text">
+          Administra roles, permisos y colaboración entre miembros del equipo.
+        </p>
+      </div>
+      <div class="card card-yellow">
+        <div class="card-icon-wrapper bg-yellow">
+          <i class="bi bi-bar-chart-line-fill"></i>
+        </div>
+        <h3 class="card-title">Reportes Visuales</h3>
+        <p class="card-text">
+          Análisis detallados con gráficos de progreso y métricas en tiempo real.
+        </p>
+      </div>
+      <div class="card card-blue">
+        <div class="card-icon-wrapper bg-blue">
+          <i class="bi bi-lightning-charge-fill"></i>
+        </div>
+        <h3 class="card-title">Productividad</h3>
+        <p class="card-text">
+          Aumenta la eficiencia con asignación automática y recordatorios inteligentes.
+        </p>
+      </div>
+      <div class="card card-green">
+        <div class="card-icon-wrapper bg-green">
+          <i class="bi bi-shield-lock-fill"></i>
+        </div>
+        <h3 class="card-title">Seguridad</h3>
+        <p class="card-text">
+          Control de acceso basado en roles con datos aislados por organización.
+        </p>
+      </div>
+      <div class="card card-yellow">
+        <div class="card-icon-wrapper bg-yellow">
+          <i class="bi bi-clock-history"></i>
+        </div>
+        <h3 class="card-title">Seguimiento</h3>
+        <p class="card-text">Monitorea tiempos, plazos y avances de cada proyecto y tarea.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section multi-org-section">
+  <div class="container container-medium">
+    <div class="grid-cols-2 items-center">
+      <div class="multi-org-image-wrapper">
+        <img src="media/team.jpg" alt="Oficina moderna" class="multi-org-image" />
+      </div>
+      <div class="multi-org-content">
+        <span class="badge badge-green">Multi-Organización</span>
+        <h2 class="section-title">Una plataforma, múltiples organizaciones</h2>
+        <p class="section-subtitle-relaxed">
+          Cada organización tiene su propio espacio aislado con total privacidad y control sobre sus
+          datos, usuarios y proyectos.
+        </p>
+        <div class="feature-list">
+          <div class="feature-item">
+            <div>
+              <i class="bi bi-check feature-icon"></i>
+              <h4 class="feature-title">Datos Aislados</h4>
+              <p class="feature-text">
+                Cada organización solo ve y gestiona sus propios proyectos y usuarios
+              </p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div>
+              <i class="bi bi-check feature-icon"></i>
+              <h4 class="feature-title">Administración Autónoma</h4>
+              <p class="feature-text">
+                Cada organización tiene su propio administrador con control total
+              </p>
+            </div>
+          </div>
+          <div class="feature-item">
+            <div>
+              <i class="bi bi-check feature-icon"></i>
+              <h4 class="feature-title">Escalabilidad</h4>
+              <p class="feature-text">
+                Ideal para empresas de todos los tamaños, desde startups hasta corporaciones
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="multi-org-action">
+          <a routerLink="/register-org" class="btn btn-primary btn-large" (click)="navigate('Register')"
+            >Crear mi Organización Ahora</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section cta-section">
+  <div class="container cta-content">
+    <h2 class="cta-title">¿Listo para transformar la gestión de proyectos?</h2>
+    <p class="cta-subtitle">Únete a cientos de equipos que ya confían en WorkFlowManager</p>
+    <div class="cta-actions">
+      <a routerLink="/register-org" class="btn btn-cta-light">
+        <span class="btn-text-desktop" (click)="navigate('Register')">Registrar Organización Gratis</span>
+        <span class="btn-text-mobile" (click)="navigate('Register')">Registrar Gratis</span>
+      </a>
+      <a routerLink="/login" class="btn btn-cta-outline" (click)="navigate('Login')">Iniciar Sesión</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-content">
+    <div class="logo-container">
+      <img src="logo.png" alt="WorkFlow Logo" class="footer-logo-img" />
+      <span class="footer-logo-text">WorkFlowManager</span>
+    </div>
+    <p class="footer-text">
+      © {{year}} WorkFlowManager. Plataforma de gestión de proyectos para equipos modernos.
+    </p>
+  </div>
+</footer>
