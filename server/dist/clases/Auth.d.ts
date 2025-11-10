@@ -5,7 +5,13 @@ export declare class AuthClass {
     }>;
     login(email: string, password: string): Promise<{
         mensaje: string;
-        usuario: import("sequelize").Model<any, any>;
+        usuario: {
+            id: any;
+            nombre: any;
+            email: any;
+            rol: any;
+        };
+        token: string;
     }>;
 }
 //# sourceMappingURL=Auth.d.ts.map
