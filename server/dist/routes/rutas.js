@@ -1,11 +1,14 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = require("express");
+const verificarToken_1 = require("../middlewares/verificarToken");
 const controladores_1 = require("../controllers/controladores");
 const router = (0, express_1.Router)();
 // LOGIN Y REGISTRO
 router.post("/register-org", controladores_1.registrarOrganizacion);
 router.post("/login", controladores_1.login);
+// MIDDLEWARE DE AUTENTICACIÓN
+router.use(verificarToken_1.verificarToken);
 // ORGANIZACIONES
 router.get("/organizaciones", controladores_1.obtenerOrganizaciones);
 router.get("/organizaciones/:id", controladores_1.obtenerOrganizacionPorId);

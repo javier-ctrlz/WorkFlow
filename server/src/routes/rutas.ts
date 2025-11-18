@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { verificarToken } from "../middlewares/verificarToken";
 import {
     // Auth
     registrarOrganizacion,
@@ -56,6 +57,9 @@ const router = Router();
 // LOGIN Y REGISTRO
 router.post("/register-org", registrarOrganizacion);
 router.post("/login", login);
+
+// MIDDLEWARE DE AUTENTICACIÓN
+router.use(verificarToken);
 
 // ORGANIZACIONES
 router.get("/organizaciones", obtenerOrganizaciones);
